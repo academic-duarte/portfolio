@@ -1,6 +1,6 @@
 [project]
 
-repo_name = "My Record"
+repo_name = "Discussion"
 repo_url = "https://github.com/academic-duarte/my-record/discussions"
 site_name = "Duarte"
 site_description = "My academic portfolio"
