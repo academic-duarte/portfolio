@@ -1,0 +1,84 @@
+[project]
+
+repo_name = "My Record"
+repo_url = "https://github.com/academic-duarte/my-record/discussions"
+site_name = "Duarte"
+site_description = "My academic portfolio"
+site_author = "Duarte"
+site_url = "https://duarte.readthedocs.io"
+copyright = """
+Copyright &copy; 2026 Duarte. All rights reserved.
+"""
+
+# --------------------------------------------------
+[project.theme]
+
+variant = "modern"
+custom_dir = "overrides"
+
+favicon = "assets/images/icon.png"
+language = "en"
+
+features = [
+    "announce.dismiss",
+    #"content.action.edit",
+    #"content.action.view",
+    "content.code.annotate",
+    "content.code.copy",
+    "content.code.select",
+    "content.footnote.tooltips",
+    "content.tabs.link",
+    "content.tooltips",
+    # "header.autohide",
+    # "navigation.expand",
+    "navigation.footer",
+    "navigation.indexes",
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    #"navigation.instant.progress",
+    "navigation.path",
+    #"navigation.prune",
+    "navigation.sections",
+    "navigation.tabs",
+    "navigation.tabs.sticky",
+    "navigation.top",
+    "navigation.tracking",
+    "search.highlight",
+    #"toc.follow",
+    #"toc.integrate",
+]
+
+# --------------------------------------------------
+[project.theme.icon]
+logo = "lucide/sigma"
+repo = "simple/github"
+
+# ----------------------------------------------------------------------------
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+
+# --------------------------------------------------
+[project.extra]
+generator = false
+
+[[project.extra.social]]
+icon = "simple/orcid"
+link = "https://orcid.org/0009-0006-5258-5241"
+
+[[project.extra.social]]
+icon = "simple/x"
+link = "https://x.com/AcademicDuarte"
