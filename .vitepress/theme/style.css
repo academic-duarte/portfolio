@@ -1,0 +1,162 @@
+/**
+ * Customize default theme styling by overriding CSS variables:
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+/* ==========================================================================
+   MODO CLARO (E-Ink Paper / Light)
+   ========================================================================== */
+:root {
+  /* Fondos del sistema (E-Paper) */
+  --vp-c-bg: #f7f6f2;           /* Tono papel cálido neutro */
+  --vp-c-bg-alt: #ecebe6;       /* Fondo secundario / cajas internas */
+  --vp-c-bg-elv: #e2e1dc;       /* Elementos elevados / menus */
+  --vp-c-bg-soft: #ecebe6;      /* Cards y paneles */
+
+  /* Textos del sistema (Pigmento tinta) */
+  --vp-c-text-1: #111111;       /* Negro de alto contraste */
+  --vp-c-text-2: #333333;       /* Texto secundario */
+  --vp-c-text-3: #666666;       /* Texto tenue / metadatos */
+
+  /* Bordes y Divisiones */
+  --vp-c-border: #cccccc;       /* Línea tenue estilo imprenta */
+
+  /* Default / Grises */
+  --vp-c-default-1: #444444;
+  --vp-c-default-2: #666666;
+  --vp-c-default-3: #888888;
+  --vp-c-default-soft: rgba(0, 0, 0, 0.05);
+
+  /* Brand / Enlaces (Estilo tinta activa - Monocromático) */
+  --vp-c-brand-1: #000000;       /* Tinta pura */
+  --vp-c-brand-2: #222222;
+  --vp-c-brand-3: #444444;
+  --vp-c-brand-soft: rgba(0, 0, 0, 0.06);
+
+  /* Botón de marca (Fondo negro, texto claro) */
+  --vp-button-brand-text: #f7f6f2; 
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-active-text: #ffffff;
+
+  /* Tip (Gris medio / Tinta suave) */
+  --vp-c-tip-1: #222222;
+  --vp-c-tip-2: #444444;
+  --vp-c-tip-3: #111111;
+  --vp-c-tip-soft: rgba(0, 0, 0, 0.05);
+
+  /* Warning (Gris oscuro con alto contraste) */
+  --vp-c-warning-1: #222222;
+  --vp-c-warning-2: #444444;
+  --vp-c-warning-3: #000000;
+  --vp-c-warning-soft: rgba(0, 0, 0, 0.08);
+
+  /* Danger (Negro sólido) */
+  --vp-c-danger-1: #000000;
+  --vp-c-danger-2: #222222;
+  --vp-c-danger-3: #000000;
+  --vp-c-danger-soft: rgba(0, 0, 0, 0.1);
+
+  /* Home / Hero (Sin gradientes planos/brillantes) */
+  --vp-home-hero-name-color: #000000;
+  --vp-home-hero-name-background: none;
+  --vp-home-hero-image-background-image: none;
+  --vp-home-hero-image-filter: none;
+}
+
+/* ==========================================================================
+   MODO OSCURO (E-Ink Dark / Inverted)
+   ========================================================================== */
+.dark {
+  /* Fondos del sistema (Tinta oscura) */
+  --vp-c-bg: #121212;           /* Negro carbón plano */
+  --vp-c-bg-alt: #1e1e1e;       /* Cajas internas */
+  --vp-c-bg-elv: #2a2a2a;       /* Elementos elevados */
+  --vp-c-bg-soft: #1e1e1e;      /* Cards y paneles */
+
+  /* Textos del sistema */
+  --vp-c-text-1: #f0f0f0;       /* Blanco atenuado estilo e-paper */
+  --vp-c-text-2: #cccccc;
+  --vp-c-text-3: #888888;
+
+  /* Bordes y Divisiones */
+  --vp-c-border: #333333;
+
+  /* Default / Grises */
+  --vp-c-default-1: #aaaaaa;
+  --vp-c-default-2: #888888;
+  --vp-c-default-3: #666666;
+  --vp-c-default-soft: rgba(255, 255, 255, 0.08);
+
+  /* Brand / Enlaces */
+  --vp-c-brand-1: #ffffff;
+  --vp-c-brand-2: #dddddd;
+  --vp-c-brand-3: #bbbbbb;
+  --vp-c-brand-soft: rgba(255, 255, 255, 0.1);
+
+  /* Botón de marca (Fondo blanco, texto oscuro) */
+  --vp-button-brand-text: #121212;
+  --vp-button-brand-hover-text: #000000;
+  --vp-button-brand-active-text: #000000;
+
+  /* Tip */
+  --vp-c-tip-1: #eeeeee;
+  --vp-c-tip-2: #cccccc;
+  --vp-c-tip-3: #ffffff;
+  --vp-c-tip-soft: rgba(255, 255, 255, 0.08);
+
+  /* Warning */
+  --vp-c-warning-1: #eeeeee;
+  --vp-c-warning-2: #cccccc;
+  --vp-c-warning-3: #ffffff;
+  --vp-c-warning-soft: rgba(255, 255, 255, 0.1);
+
+  /* Danger */
+  --vp-c-danger-1: #ffffff;
+  --vp-c-danger-2: #dddddd;
+  --vp-c-danger-3: #ffffff;
+  --vp-c-danger-soft: rgba(255, 255, 255, 0.12);
+
+  /* Home / Hero */
+  --vp-home-hero-name-color: #ffffff;
+  --vp-home-hero-name-background: none;
+  --vp-home-hero-image-background-image: none;
+  --vp-home-hero-image-filter: none;
+}
+
+/* ==========================================================================
+   COMPONENTES GLOBALES (VitePress Core)
+   ========================================================================== */
+
+:root, .dark {
+  /* Botones Primarios */
+  --vp-button-brand-border: var(--vp-c-brand-1);
+  --vp-button-brand-bg: var(--vp-c-brand-1);
+  --vp-button-brand-hover-border: var(--vp-c-brand-2);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+  --vp-button-brand-active-border: var(--vp-c-brand-3);
+  --vp-button-brand-active-bg: var(--vp-c-brand-3);
+
+  /* Bloques personalizados (Callouts estáticos tipo editorial) */
+  --vp-custom-block-tip-border: var(--vp-c-border);
+  --vp-custom-block-tip-text: var(--vp-c-text-1);
+  --vp-custom-block-tip-bg: var(--vp-c-bg-alt);
+  --vp-custom-block-tip-code-bg: var(--vp-c-bg-elv);
+}
+
+@media (min-width: 640px) {
+  :root, .dark { --vp-home-hero-image-filter: none; }
+}
+
+@media (min-width: 960px) {
+  :root, .dark { --vp-home-hero-image-filter: none; }
+}
+
+/* Buscador Algolia */
+.DocSearch {
+  --docsearch-primary-color: var(--vp-c-brand-1) !important;
+}
+
+a.active {
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+}
