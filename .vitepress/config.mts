@@ -12,6 +12,7 @@ export default defineConfig({
   title: "Duarte's Portfolio",
 	titleTemaplte: ":title | Duarte's Portfolio",
   description: "My academic archive",
+  head: [['link', { rel: 'icon', href: '/favicon.png' }]],
 	markdown: {
 		math: true
 	},

@@ -1,7 +1,9 @@
 // --------------------------------------------------------------------------------
 export default [
 	{ link: "/", text: "Home" },
-	{ activeMatch: "/knowledge/*", link: "/knowledge", text: "Knowledge" },
-	{ activeMatch: "/works/*", link: "/works", text: "Works" },
+	{ activeMatch: "/articles/*", link: "/articles", text: "Articles" },
+	{ activeMatch: "/essays/*", link: "/essays", text: "Essays" },
+	{ activeMatch: "/roadmaps/*", link: "/roadmaps", text: "Roadmaps" },
+	{ activeMatch: "/treaties/*", link: "/treaties", text: "Treaties" },
 ]
 // --------------------------------------------------------------------------------
