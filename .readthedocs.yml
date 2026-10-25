@@ -1,0 +1,11 @@
+version: 2
+
+build:
+  os: ubuntu-22.04
+  tools:
+    nodejs: "latest"
+  commands:
+     - npm ci
+     - ./node_modules/.bin/vitepress build
+     - mkdir -p $READTHEDOCS_OUTPUT/
+     - mv .vitepress/dist $READTHEDOCS_OUTPUT/html
